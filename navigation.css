@@ -1,0 +1,108 @@
+ /* common navigation styles */
+ .navigation-wrapper{
+    height: 190px;
+    background-color: #11122b;
+    /* flexbox container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+ /* left column */
+.left-column{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-wrapper> .left-column> .icon {
+    font-size: 2em;
+}
+ .left-column> .contact-hours{
+    color: royalblue;
+    display: grid;
+    grid-template-columns: 2fr;
+ }
+
+.contact-hours> .hours {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: red;
+    font-size: 1em;
+ }
+
+ /* middle column */
+ .middle-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    width: 400px;
+ }
+
+.middle-column> .banner-image img{
+    margin-left: 0px;
+    display: flex;
+    align-items: first baseline;
+    width: 130px;
+    height: 90px;
+    filter: brightness(90%);
+    border-radius: 20px;
+}
+
+.middle-column> .banner-image{
+    display: flex;
+    justify-content: center;
+}
+
+.middle-column> .link-wrapper> .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb; 
+    text-decoration: none;
+    transition: 0.5s;
+ }
+
+ .link-wrapper> .nav-link a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+ }
+
+.nav-link{
+    width: 50px;
+ }
+ 
+ .link-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ /* right column */
+ #address-wrapper{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    /* justify-content: right; */
+}
+
+ .right-column> #address-wrapper a{
+    color: yellowgreen;
+    text-decoration: none;
+ }
+#address-wrapper a:hover{
+color: goldenrod;
+}
+.right-column> .address-icon a{
+    color: yellowgreen;
+    transition: 0.5s;
+}
+.right-column> .address-icon{
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+.right-column> .address-icon a:hover{
+    color: goldenrod;
+}
+
+
+

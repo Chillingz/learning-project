@@ -1,0 +1,80 @@
+/* skewed header styles */
+/* skewed header */
+h5{
+    color: red;
+    font-size: 1em;
+    text-indent: 10px;
+}
+
+.skewed-header{
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.skewed-header> .header-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(80%);
+}
+
+.skewed-header> .skewed-header-wrapper> .skewed-header-content> .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+.skewed-header-content> .links-wrapper> .nav-link {
+    width: 20px;
+}
+
+.skewed-header-content> .links-wrapper> .nav-link a{
+    color: #cbcbcb;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.skewed-header-content> .links-wrapper> .nav-link a:hover{
+    color: goldenrod; 
+    letter-spacing: 1px;
+}
+
+.skewed-header> .skewed-header-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header> .skewed-header-wrapper> .skewed-header-content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header> .skewed-header-wrapper> .skewed-header-content> .heading-wrapper {
+    background-color: #cea135;
+    font-size: 80%;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    color: red;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100px;
+    padding-left: 10px;
+}
